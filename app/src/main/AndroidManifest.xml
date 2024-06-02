@@ -13,10 +13,30 @@
         android:theme="@style/Theme.MovieList"
         tools:targetApi="31">
         <activity
+            android:name=".TelaLogin"
+            android:exported="false"
+            android:label="TelaLogin"
+            android:theme="@style/Theme.MovieList" />
+        <activity
+            android:name=".TelaEmAlta"
+            android:exported="false"
+            android:label="TelaEmAlta"
+            android:theme="@style/Theme.MovieList" />
+        <activity
+            android:name=".TelaMaisBemAvaliados"
+            android:exported="false"
+            android:label="TelaMaisBemAvaliados"
+            android:theme="@style/Theme.MovieList" />
+        <activity
+            android:name=".TelaPorVir"
+            android:exported="false"
+            android:label="TelaPorVir"
+            android:theme="@style/Theme.MovieList" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MovieList">
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

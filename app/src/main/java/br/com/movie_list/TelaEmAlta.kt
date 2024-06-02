@@ -1,5 +1,6 @@
 package br.com.movie_list
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,11 +13,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import br.com.movie_list.ui.theme.MovieListTheme
-
+import android.widget.Button
 
 class TelaEmAlta : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tela_emalta)
+
+        val btnvoltar : Button = findViewById(R.id.btn_voltar)
+
+        btnvoltar.setOnClickListener{
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

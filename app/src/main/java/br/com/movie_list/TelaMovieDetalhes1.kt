@@ -16,10 +16,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import br.com.movie_list.ui.theme.MovieListTheme
 
 
-class TelaMaisBemAvaliados : AppCompatActivity() {
+class TelaMovieDetalhes1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tela_maisbemavaliados)
+        setContentView(R.layout.tela_movie1_detalhes)
 
         val btnvoltar : Button = findViewById(R.id.btn_voltar)
 
